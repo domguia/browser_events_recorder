@@ -2,6 +2,8 @@
 
 This project demonstrates how to capture user interactions (clicks, inputs) in a structured format suitable for prompting Large Language Models (LLMs). It uses `rrweb` for session recording and custom JavaScript to extract semantic events.
 
+![Demo Screenshot](demo_screenshot.png)
+
 ## Features
 
 - **Semantic Event Extraction**: Captures clicks and input changes with relevant metadata (tag name, ID, class, inner text, attributes).
