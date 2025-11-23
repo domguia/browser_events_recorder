@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Action Recorder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import rrweb from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/rrweb@latest/dist/rrweb.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Shop</h1>
+        <p>Browse our items below.</p>
+
+        <div class="product-grid">
+            <div class="product-card" data-id="p1">
+                <h2>Widget A</h2>
+                <p>$10.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="p2">
+                <h2>Gadget B</h2>
+                <p>$20.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <h3>Subscribe</h3>
+            <input type="email" placeholder="Enter your email" id="email-input">
+            <button id="subscribe-btn">Subscribe</button>
+        </div>
+
+        <div class="logs-area">
+            <h3>Recorded Actions (for LLM)</h3>
+            <button id="export-btn" style="background-color: #27ae60; margin-bottom: 1rem;">Export JSON</button>
+            <pre id="logs-output"></pre>
+        </div>
+    </div>
+
+    <script src="recorder.js"></script>
+</body>
+
+</html>
